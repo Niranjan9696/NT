@@ -1,0 +1,6 @@
+FROM alpine:latest
+LABEL MAINTAINER="https://github.com/Niranjan9696/NT.git"
+WORKDIR /NiranjanPhish/
+ADD . /NiranjanPhish
+RUN apk add --no-cache bash ncurses curl unzip wget php 
+CMD "./NiranjanPhish.sh"
